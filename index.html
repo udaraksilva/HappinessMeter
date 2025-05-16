@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movenpick Voting</title>
+  <link rel="stylesheet" href="static/style.css" />
+</head>
+<body>
+  <header>
+    <img src="static/logo.jpg" alt="Movenpick Logo" class="logo">
+    <select id="language-select" class="language-select">
+      <option value="en">English</option>
+      <option value="ar">العربية</option>
+      <option value="hi">हिन्दी</option>
+      <option value="ta">தமிழ்</option>
+      <option value="te">తెలుగు</option>
+      <option value="ml">മലയാളം</option>
+      <option value="si">සිංහල</option>
+      <option value="ur">اردو</option>
+      <option value="bn">বাংলা</option>
+      <option value="ne">नेपाली</option>
+      <option value="pl">Polski</option>
+      <option value="ru">Русский</option>
+    </select>
+  </header>
+  <main>
+    <div class="login-container">
+      <h1 id="welcome-text">Welcome to the Happiness Meter</h1>
+      <input type="text" id="employee-id" placeholder="Enter Employee ID" />
+      <button onclick="login()" id="login-button">Login</button>
+    </div>
+    <div id="vote-section" class="hidden">
+      <h2 id="how-do-you-feel">How do you feel today?</h2>
+      <div class="emoji-buttons">
+        <button onclick="submitVote('happy')" class="emoji-button">😊</button>
+        <button onclick="submitVote('sad')" class="emoji-button">😞</button>
+      </div>
+    </div>
+  </main>
+  <script src="static/script.js"></script>
+</body>
+</html>
